@@ -15,7 +15,9 @@ $query = "SELECT * FROM usuarios WHERE id_usuario = '$id_usuario' AND clave = '$
 			$_SESSION['u_usuario'] = $row['nombres'];
 			header("Location: Admin/index.php");
 		} else {
-            
+            $_SESSION['id_usuario'] = $row['id_usuario'];
+			$_SESSION['u_usuario'] = $row['nombres'];
+			header("Location: User/index.php");
         }
 	} else {
 		header("Location: index.php");
