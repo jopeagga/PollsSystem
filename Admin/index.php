@@ -1,3 +1,11 @@
+<?php 
+
+  date_default_timezone_set("America/Mexico_City");
+  $date = new DateTime();
+
+  $fecha_inicio = $date->format('Y-m-d H:i:s');
+  
+ ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
